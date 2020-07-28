@@ -1,6 +1,11 @@
 "use strict";
 
-let deliveryPrice;
+const deliveryChina = 100;
+const deliveryChile = 250;
+const deliveryAustralia = 170;
+const deliveryIndia = 80;
+const deliveryJamaica = 120;
+
 let clientCountry = prompt("Укажите страну доставки");
 
 if (clientCountry === null) {
@@ -9,57 +14,32 @@ if (clientCountry === null) {
   let lowerCaseCountry = clientCountry.toLowerCase();
   switch (lowerCaseCountry) {
     case "китай":
-      deliveryPrice = 100;
       console.log(
-        "Доставка в " +
-          clientCountry +
-          " будет стоить " +
-          deliveryPrice +
-          " кредитов"
+        `Доставка в ${clientCountry} будет стоить ${deliveryChina} кредитов.`
       );
       break;
 
     case "чили":
-      deliveryPrice = 250;
       console.log(
-        "Доставка в " +
-          clientCountry +
-          " будет стоить " +
-          deliveryPrice +
-          " кредитов"
+        `Доставка в ${clientCountry} будет стоить ${deliveryChile} кредитов.`
       );
       break;
 
     case "австралия":
-      deliveryPrice = 170;
       console.log(
-        "Доставка в " +
-          clientCountry +
-          " будет стоить " +
-          deliveryPrice +
-          " кредитов"
+        `Доставка в ${clientCountry} будет стоить ${deliveryAustralia} кредитов.`
       );
       break;
 
     case "индия":
-      deliveryPrice = 80;
       console.log(
-        "Доставка в " +
-          clientCountry +
-          " будет стоить " +
-          deliveryPrice +
-          " кредитов"
+        `Доставка в ${clientCountry} будет стоить ${deliveryIndia} кредитов.`
       );
       break;
 
     case "ямайка":
-      deliveryPrice = 120;
       console.log(
-        "Доставка в " +
-          clientCountry +
-          " будет стоить " +
-          deliveryPrice +
-          " кредитов"
+        `Доставка в ${clientCountry} будет стоить ${deliveryJamaica} кредитов.`
       );
       break;
 

@@ -1,12 +1,15 @@
 "use strict";
 
-const ADMIN_PASSWORD = "qwerty";
+const ADMIN_PASSWORD = "jqueryismyjam";
+let message;
+
 const enteredPass = prompt("Please enter password");
 
 if (enteredPass === null) {
-  alert("Отменено пользователем!");
+  message = "Отменено пользователем!";
+  alert(message);
 } else {
-  let message =
+  message =
     ADMIN_PASSWORD === enteredPass
       ? "Добро пожаловать!"
       : "Доступ запрещен, неверный пароль!";
