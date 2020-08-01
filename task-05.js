@@ -11,8 +11,7 @@ let clientCountry = prompt("Укажите страну доставки");
 if (clientCountry === null) {
   console.log("Отменено пользователем!");
 } else {
-  let lowerCaseCountry = clientCountry.toLowerCase();
-  switch (lowerCaseCountry) {
+  switch (clientCountry.toLowerCase()) {
     case "китай":
       console.log(
         `Доставка в ${clientCountry} будет стоить ${deliveryChina} кредитов.`
