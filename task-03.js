@@ -7,10 +7,10 @@ const enteredPass = prompt("Please enter password");
 
 if (enteredPass === null) {
   message = "Отменено пользователем!";
+} else if (ADMIN_PASSWORD === enteredPass) {
+  message = "Добро пожаловать!";
 } else {
-  message =
-    ADMIN_PASSWORD === enteredPass
-      ? "Добро пожаловать!"
-      : "Доступ запрещен, неверный пароль!";
+  message = "Доступ запрещен, неверный пароль!";
 }
+
 alert(message);
